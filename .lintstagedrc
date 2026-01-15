@@ -1,0 +1,13 @@
+{
+    "apps/web/**/*.{js,ts,tsx,jsx}": [
+        "sh -c 'ESLINT_USE_FLAT_CONFIG=false pnpm --filter web exec eslint --fix \"$@\"' --",
+        "prettier --write"
+    ],
+    "apps/server/**/*.{js,ts,tsx}": [
+        "pnpm --filter server exec eslint --fix",
+        "prettier --write"
+    ],
+    "*.{json,md,css}": [
+        "prettier --write"
+    ]
+}
