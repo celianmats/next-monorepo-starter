@@ -6,6 +6,7 @@
   "scripts": {
     "dev": "pnpm run --parallel dev",
     "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "pnpm -r run lint",
     "prepare": "husky"
   },
   "keywords": [],
@@ -14,6 +15,7 @@
   "packageManager": "pnpm@10.18.2",
   "devDependencies": {
     "husky": "^9.1.7",
-    "lint-staged": "^16.2.7"
+    "lint-staged": "^16.2.7",
+    "prettier": "^3.6.2"
   }
 }
